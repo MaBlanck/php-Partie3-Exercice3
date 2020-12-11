@@ -16,13 +16,13 @@ $randomNumber = 57;
     <h1>Exercice 3 Partie 3</h1>
     <ul>
         <?php
-        while ($startNumber >= 10) {
-            $result = $startNumber * $randomNumber;
-            echo '<li>' . $result  . '</li>';
-            $startNumber--;
-        }
-        ?></ul>
-
+        while ($startNumber > 10): 
+            $result = $startNumber * $randomNumber?>
+        <li><?= $result ?></li>
+        <?php $startNumber--?>
+        <?php endwhile;?>
+        
+    </ul>
 </body>
 
 </html>
